@@ -14,10 +14,12 @@
   margin-left: auto;
   text-align: center;
   margin-bottom: 1000px;
+  width: 50%;
+  height: auto;
 }
 
 .ip-logo #circle {
-  width: 100%;
+  /*width: 75%;*/
   fill: none;
   stroke: white;
   stroke-width: 10px;
@@ -196,6 +198,8 @@ h1.site-title{
 
 
 
+
+
 .about {
 float:left;
 width:52%;
@@ -345,6 +349,8 @@ img#self-portrait{
 
 
 #computer {
+  width: 50%;
+  height: auto;
     fill: none;
   stroke: white;
   stroke-width: 7px;
@@ -354,6 +360,13 @@ img#self-portrait{
   animation: 12s computer-outline forwards;
   animation-delay: 8s;
   
+}
+
+.comp-logo{
+  width: 60%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @keyframes computer-outline {
