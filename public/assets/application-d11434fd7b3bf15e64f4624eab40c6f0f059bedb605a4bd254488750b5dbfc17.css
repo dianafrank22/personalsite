@@ -1,0 +1,662 @@
+.ip-header {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	min-height: 480px;
+	width: 100%;
+	height: 100%;
+	background-image: url("/assets/background.jpg");
+}
+
+.ip-header h1 {
+	margin: 0;
+	float: left;
+}
+
+.ip-logo,
+.ip-loader {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+	cursor: default;
+	pointer-events: none;
+}
+
+
+
+.ip-loader {
+	bottom: 20%;
+}
+
+.ip-header .ip-inner {
+	display: block;
+	margin: 0 auto;
+}
+
+
+
+.ip-header .ip-loader svg path {
+	fill: none;
+	stroke-width: 6;
+}
+
+.ip-header .ip-loader svg path.ip-loader-circlebg {
+	stroke: #ddd;
+}
+
+.ip-header .ip-loader svg path.ip-loader-circle {
+	-webkit-transition: stroke-dashoffset 7s;
+	transition: stroke-dashoffset 0.2s;
+	stroke: #AA2250;
+}
+
+
+
+
+.box p {
+	font-family: 'Blokk', Arial, sans-serif;
+}
+
+
+/* Animations */
+
+/* Initial animation of header elements */
+.loading .ip-logo,
+.loading .ip-loader {
+	opacity: 1;
+	-webkit-animation: animInitialHeader 8s cubic-bezier(0.7,0,0.3,1) both;
+	animation: animInitialHeader 5s cubic-bezier(0.7,0,0.3,1) both;
+}
+
+.loading .ip-loader {
+	-webkit-animation-delay: 1s;
+	animation-delay: 0.7s;
+}
+
+@-webkit-keyframes animInitialHeader {
+	from { opacity: 0; -webkit-transform: translate3d(0,800px,0); }
+}
+
+
+/* Header elements when loading finishes */
+.loaded .ip-logo,
+.loaded .ip-loader {
+	opacity: 1;
+}
+
+.loaded .ip-logo {
+	-webkit-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+	-webkit-animation: animLoadedLogo 1s cubic-bezier(0.7,0,0.3,1) forwards;
+	animation: animLoadedLogo 1s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+
+@-webkit-keyframes animLoadedLogo {
+	to { -webkit-transform: translate3d(0,100%,0) translate3d(0,50px,0) scale3d(0.65,0.65,1); }
+}
+
+
+/* Change the color of the logo */
+.loaded .ip-logo svg path {
+	-webkit-transition: all 0.5s ease 0.3s;
+	transition: all 0.5s ease 0.3s;
+	fill: #fff;
+}
+
+/* Header animation when loading finishes */
+.loaded .ip-header {
+	-webkit-animation: animLoadedHeader 1s cubic-bezier(0.7,0,0.3,1) forwards;
+	animation: animLoadedHeader 1s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+
+@-webkit-keyframes animLoadedHeader {
+	to { -webkit-transform: translate3d(0,-100%,0); }
+}
+
+@keyframes animLoadedHeader {
+	to { -webkit-transform: translate3d(0,-100%,0); transform: translate3d(0,-100%,0); }
+}
+
+
+
+.loading .ip-logo .svg{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+
+.ip-logo .svg-logo{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-bottom: 1000px;
+}
+
+.ip-logo #circle {
+  width: 100%;
+  fill: none;
+  stroke: white;
+  stroke-width: 15px;
+  stroke-dasharray:10500;
+  stoke-dashoffset: 10500;
+  opacity: 0;
+  animation: 8s circle-outline forwards;
+  
+}
+
+
+.ip-logo #title {
+  fill: none;
+  stroke: white;
+  stroke-width: 15px;
+  stroke-dasharray: 6500;
+  stoke-dashoffset: 6500;
+  opacity: 0;
+  animation: 10s text-outline forwards;
+}
+ 
+
+
+@keyframes circle-outline {
+  from {
+    stroke-dashoffset: 10500;
+    opacity: 0;
+  }
+  to{
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes text-outline {
+  from{
+    stroke-dashoffset: 6500;
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+} 
+
+
+h1{
+    font-size: 5em;
+    font-family: arial,helvetica;
+    color: #fff;
+    margin:0;
+  }
+
+.section{
+    text-align:center;
+  }
+
+#home {
+  background: linear-gradient(#304352, #384957, #40505D, #485763);
+  /*height: 100vh;*/
+}
+#about {
+  background: linear-gradient(#505E69, #58656F, #606C75, #68737B);
+  /*height: 100vh;*/
+
+}
+
+#projects{
+  background: linear-gradient(#707A80,#788186,#80888C,#888F92);
+  /*height: 100vh;*/
+}
+
+#contact {
+  background: linear-gradient(#909698, #989D9E, #A0A4A4, #A9ABAA);
+  /*height: 50vh;*/
+}
+
+li#menu{
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+ul#menu{
+  margin-bottom: -22px;
+}
+
+.stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+}
+
+a {
+color: white;
+text-decoration: none;
+font-size:1.5em ;
+font-family: 'Poiret One', cursive;
+margin-top: 20px;
+
+
+
+}
+
+#menu {
+  
+  margin: 0;
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+}
+
+#contact-logo {
+  display: inline;
+}
+
+/*skills chart*/
+#canvas-holder{
+display: right;
+
+}
+
+nav.main-nav {
+background: rgba(50,52,73,0.2);
+position:fixed;
+top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+
+}
+
+/*nav.main-nav.stickytop{
+  margin-top: 0;
+  position:fixed;
+  top: 0;
+  background-color: transparent;
+}
+
+nav.main-nav.stickytop a {
+  color: black;
+  font-weight: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}*/
+
+
+
+h1.site-title{
+    font-family: 'Lobster Two', cursive;
+    font-size: 4.3em;
+    font-weight: normal;
+    font-style: italic;
+    text-shadow: darkgray 2px 2px;
+    margin-top: -162px;
+    margin:auto;
+    text-shadow: darkgray 2px 2px;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+.about {
+float:left;
+width:52%;
+overflow:hidden;
+}
+
+p.about-info{
+  margin-left:50px;
+}
+
+p.skills-info{
+  font-style: italic;
+}
+
+h1, h2{
+  text-shadow: darkgray 2px 2px;
+  font-family: 'Lobster Two', cursive;
+}
+
+
+#canvas-holder{
+float:right;
+width:48%;
+overflow:hidden;
+/*margin-right: 10px;*/
+/*margin-left: 10px;*/
+}
+
+#aboutme{
+  margin-top: 10px;
+}
+
+
+div.section{
+  padding-top: 40px;
+}
+
+img.github{
+  margin-right: 30px;
+}
+
+img.linkedin{
+  margin-left: 30px;
+}
+
+img.project{
+  height: 420px;
+  width: 420px;
+  border: white solid 4px;
+  border-radius: 50%;
+}
+
+/*.project1{
+  float: left;
+  width: 50%;
+  overflow: hidden;
+}
+
+
+
+.project2{
+  width: 50%;
+  overflow: hidden;
+
+}*/
+
+.contact-logo{
+  margin-top: 10px;
+}
+
+img#self-portrait{
+  height: inherit;
+  width: 400px;
+  border: white solid 4px;
+}
+
+
+
+
+#computer {
+    fill: none;
+  stroke: white;
+  stroke-width: 7px;
+  stroke-dasharray:7000;
+  stoke-dashoffset: 7000;
+  opacity: 0;
+  animation: 12s computer-outline forwards;
+  animation-delay: 6s;
+  
+}
+
+@keyframes computer-outline {
+  from {
+    stroke-dashoffset: 7000;
+    opacity: 0;
+  }
+  to{
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+/*!
+ * fullPage 2.7.8
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+
+html.fp-enabled,
+.fp-enabled body {
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+
+    /*Avoid flicker on slides transitions for mobile phones #336 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+#superContainer {
+    height: 100%;
+    position: relative;
+
+    /* Touch detection for Windows 8 */
+    -ms-touch-action: none;
+
+    /* IE 11 on Windows Phone 8.1*/
+    touch-action: none;
+}
+.fp-section {
+    position: relative;
+    -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
+    -moz-box-sizing: border-box; /* <=28 */
+    box-sizing: border-box;
+}
+.fp-slide {
+    float: left;
+}
+.fp-slide, .fp-slidesContainer {
+    height: 100%;
+    display: block;
+}
+.fp-slides {
+    z-index:1;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out; /* Safari<=6 Android<=4.3 */
+    transition: all 0.3s ease-out;
+}
+.fp-section.fp-table, .fp-slide.fp-table {
+    display: table;
+    table-layout:fixed;
+    width: 100%;
+}
+.fp-tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+.fp-slidesContainer {
+    float: left;
+    position: relative;
+}
+.fp-controlArrow {
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -38px;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.fp-controlArrow.fp-prev {
+    left: 15px;
+    width: 0;
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #fff transparent transparent;
+}
+.fp-controlArrow.fp-next {
+    right: 15px;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fff;
+}
+.fp-scrollable {
+    overflow: scroll;
+}
+.fp-notransition {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+#fp-nav {
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+}
+/*#fp-nav.right {
+    right: 17px;
+}
+#fp-nav.left {
+    left: 17px;
+}*/
+.fp-slidesNav{
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    opacity: 1;
+}
+.fp-slidesNav.bottom {
+    bottom: 17px;
+}
+.fp-slidesNav.top {
+    top: 17px;
+}
+/*#fp-nav ul,
+.fp-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+#fp-nav ul li,
+.fp-slidesNav ul li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position:relative;
+}
+.fp-slidesNav ul li {
+    display: inline-block;
+}
+#fp-nav ul li a,
+.fp-slidesNav ul li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}*/
+/*#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span{
+    height: 12px;
+    width: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 100%;
+ }
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 4px;
+    width: 4px;
+    border: 0;
+    background: #333;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}*/
+/*#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span{
+    width: 10px;
+    height: 10px;
+    margin: -5px 0px 0px -5px;
+}
+#fp-nav ul li .fp-tooltip {
+    position: absolute;
+    top: -2px;
+    color: #fff;
+    font-size: 14px;
+    font-family: arial, helvetica, sans-serif;
+    white-space: nowrap;
+    max-width: 220px;
+    overflow: hidden;
+    display: block;
+    opacity: 0;
+    width: 0;
+    cursor: pointer;
+}
+#fp-nav ul li:hover .fp-tooltip,
+#fp-nav.fp-show-active a.active + .fp-tooltip {
+    -webkit-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
+    width: auto;
+    opacity: 1;
+}
+#fp-nav ul li .fp-tooltip.right {
+    right: 20px;
+}
+#fp-nav ul li .fp-tooltip.left {
+    left: 20px;
+}*/
+.fp-auto-height.fp-section,
+.fp-auto-height .fp-slide,
+.fp-auto-height .fp-tableCell{
+    height: auto !important;
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;margin:0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:bold;}dfn{font-style:italic;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;}q{quotes:"\201C" "\201D" "\2018" "\2019";}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:0;}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{border:0;padding:0;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,select{text-transform:none;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}button[disabled],html input[disabled]{cursor:default;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+body {
+	margin: 0;
+}
+ul.nav {
+	display: inline;
+}
+
+
+/*	#home img,
+		#about img{
+			margin: 20px 0 0 0;
+		}
+		#projects img{
+			margin: 20px 0 0 52px;
+		}
+		#contact img{
+			bottom: 0px;
+			position: absolute;
+			margin-left: -420px;
+		}*/
