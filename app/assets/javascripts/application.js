@@ -16,61 +16,7 @@
 //= require_tree .
 
 
-$(document).ready(function() {
-var doughnutData = [
-				{
-					value: 1,
-					label: "One"
-				},
-				{
-					value: 2,
-					label: "Two"
-				},
-				{
-					value: 3,
-					label: "Three"
-				},
-				{
-					value: 4,
-					label: "Four"
-				},
-				{
-					value: 5,
-					label: "Five"
-				}
-			];
-			window.onload = function(){
-				var ctx = document.getElementById("chart-area").getContext("2d");
-				window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive : true});
-			};
 
-			// $(function(){
-			// 	$(window).scroll(function(){
-			// 		if ($(this).scrollTop()>=50){
-			// 			$('nav.main-nav').addClass('stickytop');
-			// 		}
-			// 		else{
-			// 			$('nav.main-nav').removeClass('stickytop');
-			// 		}
-
-			// 	});
-			// });
-
-
-			$(function(){
-				$(window).scroll(function(){
-					if ($(this).scrollTop()<=1520){
-						$('div.bounce').addClass('arrow');
-					}
-					else{
-						$('div.bounce').removeClass('arrow');
-					}
-
-				});
-			});
-
-
-});
 
 
 
