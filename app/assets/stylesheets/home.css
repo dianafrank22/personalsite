@@ -153,20 +153,6 @@ top: 0;
 
 }
 
-/*nav.main-nav.stickytop{
-  margin-top: 0;
-  position:fixed;
-  top: 0;
-  background-color: transparent;
-}
-
-nav.main-nav.stickytop a {
-  color: black;
-  font-weight: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-}*/
-
 
 
 h1.site-title{
@@ -231,25 +217,22 @@ img.linkedin{
 }
 
 img.project{
-  height: 420px;
-  width: 420px;
+  height: inherit;
   border: white solid 4px;
-  border-radius: 50%;
+  width: 50%;
+  overflow: hidden;
+
 }
 
-/*.project1{
+.project-info{
   float: left;
-  width: 50%;
+  width: 45%;
   overflow: hidden;
 }
 
 
 
-.project2{
-  width: 50%;
-  overflow: hidden;
 
-}*/
 
 .contact-logo{
   margin-top: 10px;
@@ -287,3 +270,12 @@ img#self-portrait{
   }
 }
 
+li#project-skill{
+  text-decoration: none;
+  font-size: 24px;
+
+}
+
+p.attendance{
+  font-size:24px;
+}

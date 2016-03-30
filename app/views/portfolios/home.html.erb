@@ -148,33 +148,93 @@
 
 <div class="section" id="projects" data-anchor='secondPage'>
 <a name ='projects'>
-		<div class="title">
+	<div class="title">
 
 		<div class = "slide 1" data-anchor="slide1">
-		<div class ="projects">
-			<h1>Projects</h1>
-				<h2> View Some Of My Previous Work </h2>
-			</div>
-			</div>
-
-<div class = "slide 2" data-anchor="slide2">
-			<div class ="project1">
-			<h3> Attendance Management </h3>
-			<p> An attendance tracking app built for General Assembly </p>
-			<a href="https://murmuring-fortress-68555.herokuapp.com/"><img class="project"src ="/assets/attendance.png"></a>
-			</div>
-			</div>
-
-		<div class = "slide 3" data-anchor="slide3" >
-		<div class ="project2">
-				<h2> Simon Says</h2>
-				<p> An interactive single page game </p>
-				<img class="project"src= "/assets/simonpicture.png">
-				
-				
-			</div>
+			<div class ="projects">
+				<h1>Projects</h1>
+					<h2> View Some Of My Previous Work </h2>
 			</div>
 		</div>
+
+		<div class = "slide 2" data-anchor="slide2">
+			<div class ="project1">
+				<div class="project-info">
+					<h2> Attendance Management </h2>
+					<p class="attendance"> An attendance tracking app built for General Assembly </p>
+					<ul class="skills-list"> Technologies Used
+					
+					<li id="project-skill"> Rails </li>
+					<li id="project-skill"> PSQL </li>
+					<li id="project-skill"> jQuery </li>
+					<li id="project-skill"> CSS </li>
+					<li id="project-skill"> HTML </li>
+					
+					</ul>
+				</div>
+				<a href="https://github.com/ldelamojr/attendance_management"><img class="project"src ="/assets/attendance.png"></a>
+			</div>
+		</div>
+
+		<div class = "slide 3" data-anchor="slide3" >
+			<div class ="project2">
+				<div class="project-info">
+					<h2> Song Share</h2>
+					<p> A Social Music Recommendation App </p>
+					<ul class="skills-list"> Technologies Used
+					<p>
+					<li id="project-skill"> Rails </li>
+					<li id="project-skill"> PSQL </li>
+					<li id="project-skill"> jQuery </li>
+					<li id="project-skill"> AJAX </li>
+					<li id="project-skill"> Spotify API </li>
+					<li id="project-skill"> Bootstrap</li>
+					<li id="project-skill"> CSS </li>
+					<li id="project-skill"> HTML </li>
+					</p>
+					</ul>
+				</div>
+				<a href="https://github.com/dianafrank22/Songshare"><img class="project"src="/assets/songshare.png"></a>		
+			</div>
+		</div>
+
+		<div class = "slide 4" data-anchor="slide4" >
+			<div class ="project3">
+				<div class="project-info">
+					<h2> Coffee Talk</h2>
+					<p> A Forum Style App </p>
+					<ul class="skills-list"> Technologies Used
+					<p>
+					<li id="project-skill"> Sinatra </li>
+					<li id="project-skill"> PSQL </li>
+					<li id="project-skill"> jQuery </li>
+					<li id="project-skill"> Skeleton</li>
+					<li id="project-skill"> CSS </li>
+					<li id="project-skill"> HTML </li>
+					</p>
+					</ul>
+				</div>
+				<a href="https://github.com/dianafrank22/project2forum"><img class="project"src= "/assets/coffeetalk.png"></a>	
+			</div>
+		</div>
+
+		<div class = "slide 5" data-anchor="slide5" >
+			<div class ="project4">
+				<div class="project-info">
+					<h2> Simon Says</h2>
+					<p> An interactive single page game </p>
+					<ul class="skills-list"> Technologies Used
+					<p>
+					<li id="project-skill"> jQuery</li>
+					<li id="project-skill"> CSS </li>
+					<li id="project-skill"> HTML </li>
+					</p>
+					</ul>
+					</div>
+				<a href="https://github.com/dianafrank22/dianafrank22.github.io"><img class="project"src= "/assets/simonpicture.png"></a>		
+			</div>
+		</div>
+	</div>
 </a>
 </div>
 
@@ -183,7 +243,6 @@
 <a name ='contact'>
 	<div class="title">
 		<h1>Contact</h1>
-
 		<div class = "contact-logo">
 			<a href="https://github.com/dianafrank22"><img class="github" src ="/assets/github.png"></a>
 			<a href="https://www.linkedin.com/in/dianafrank"><img class="linkedin" src="/assets/linkedin.png"></a>
@@ -204,83 +263,10 @@
 <script src="/assets/classie.js"></script>
 <script src="/assets/pathLoader.js"></script>
 <script src="/assets/main.js"></script>
-
-
-
-<!-- parallax scrolling script -->
-  <script type="text/javascript">
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                menu: '#menu',
-                anchors: ['firstPage', 'secondPage', '3rdPage'],
-                autoScrolling: false
-            });
-        });
-    </script>
-
 <script src="/assets/Chart.js"></script>
 <script src='/assets/Chart.min.js'></script>
 
-<script>
 
-    var pieData = [
-                {
-                    value: 20,
-                    color:"#C82D41",
-                    label: "HTML"
-                },
-                {
-                    value : 10,
-                    color : "#B92748",
-                    label: "Angular.js"
-                },
-                {
-                    value : 20,
-                    color : "#AA2250",
-                    label: "jQuery/Javascript"
-                },
-                {
-                    value : 10,
-                    color : "#9B1C58",
-                    label: "Express.js"
-                },
-                {
-                    value : 20,
-                    color : "#8C1760",
-                    label: "PSQL"
-                },
-                {
-                    value : 10,
-                    color : "#7D1167",
-                    label: "Git"
-                },
-                 {
-                    value : 20,
-                    color : "#6E0C6F",
-                    label: "CSS"
-                },
-                {
-                    value : 20,
-                    color : "#5F0677",
-                    label: "Rails"
-                },
-                {
-                    value : 10,
-                    color : "#50017F",
-                    label: "Ember"
-                }
-            ];
-            // pie chart options
-            var pieOptions = {
-                 segmentShowStroke : false,
-                 animateScale : true
-            }
-            // get pie chart canvas
-            var skills= document.getElementById("skills").getContext("2d");
-            // draw pie chart
-            new Chart(skills).Pie(pieData, pieOptions);
-
-</script>
 
 </div>
 </body>
