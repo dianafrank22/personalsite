@@ -279,3 +279,10 @@ li#project-skill{
 p.attendance{
   font-size:24px;
 }
+
+button.download {
+  border-radius: 5px;
+  background-color: white;
+  color: #6e0c6f;
+  font-weight: bold;
+}
